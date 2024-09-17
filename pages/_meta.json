@@ -1,0 +1,13 @@
+{
+  "index": "Introduction",
+  "about": {
+    "title": "About",
+    "type": "page"
+  },
+  "contact": {
+    "title": "Contact Me ↗",
+    "type": "page",
+    "href": "mailto:b10705052@ntu.edu.tw",
+    "newWindow": true
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "cs-book",
+  "version": "0.0.1",
+  "description": "A book about learning computer science",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YouMingYeh/cs-book.git"
+  },
+  "author": "YOU-MING, YEH <b10705052@ntu.edu.tw>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YouMingYeh/cs-book/issues"
+  },
+  "homepage": "https://github.com/YouMingYeh/cs-book",
+  "dependencies": {
+    "next": "^14.0.0",
+    "nextra": "latest",
+    "nextra-theme-docs": "latest",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sharp": "^0.33.4"
+  },
+  "devDependencies": {
+    "@types/node": "18.11.10",
+    "typescript": "^4.9.3"
+  }
+}
