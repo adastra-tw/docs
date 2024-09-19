@@ -40,7 +40,7 @@ const config: DocsThemeConfig = {
   // chat: {
   //   link: 'https://discord.com',
   // },
-  docsRepositoryBase: "https://github.com/adastra-tw/docs",
+  docsRepositoryBase: "https://github.com/adastra-tw/docs/tree/main",
   footer: {
     text: "Created by Adastra Team",
   },
@@ -58,7 +58,7 @@ const config: DocsThemeConfig = {
     titleTemplate: '%s – Adastra',
     openGraph: {
       type: "website",
-      url: "https://github.com/adastra-tw/docs",
+      url: "https://adastra-tw.github.io/docs",
       title: "Adastra",
       description: "Adastra documentation site",
     },
