@@ -5,9 +5,10 @@
     "type": "page"
   },
   "contact": {
-    "title": "Contact Me ↗",
+    "title": "Contact ↗",
     "type": "page",
     "href": "mailto:b10705052@ntu.edu.tw",
     "newWindow": true
-  }
+  },
+  "workshop": "Workshop"
 }

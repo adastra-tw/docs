@@ -1,0 +1,190 @@
+import { Callout, Steps } from "nextra/components";
+
+# Docs Management Workshop
+
+<Callout type="info">
+  **Date**: 28th September 2024  
+  **Time**: 9:00 PM  
+  **Duration**: 1 hour  
+  **Location**: Google Meet  
+  **Host**: @marx  
+  **Notetaker**: @camille  
+  **Participants**: @sam, @stephanie  
+</Callout>
+
+## Introduction
+
+Welcome to the **Docs Management Workshop**! Effective documentation is key to ensuring everyone is aligned and project knowledge is retained. Today, we’ll learn how to manage our team's documentation effectively by exploring:
+
+1. **Docs website & GitHub basics** (10 min)
+2. **Markdown & MDX basics** (20 min)
+3. **Best practices for writing docs** (20 min)
+4. **Q&A session** (10 min)
+
+Let’s get started!
+
+### Topics Covered
+
+1. **Introduction to Docs & GitHub**  
+   - Why we use GitHub  
+   - How to navigate and edit pages on the docs site  
+
+2. **Markdown & MDX**  
+   - Markdown basics (formatting like Notion, HackMD)  
+   - MDX: combining Markdown and JSX for custom components  
+
+3. **Best Practices for Documentation**  
+   - Advanced MDX techniques  
+   - Structuring pages  
+   - Writing clear and effective docs  
+
+4. **Q&A**  
+   - Wrap up with a discussion and questions  
+
+### Prerequisites
+
+- **GitHub account**  
+- **Open mind**  
+- **Visual Studio Code** (Optional)  
+- **pnpm**: [Installation Guide](https://pnpm.io/zh-TW/installation) (Optional)
+
+### Useful References
+
+- [GitHub Repo](https://github.com/adastra-tw/docs)  
+- [Docs Website](https://adastra-tw.github.io/docs/)  
+- [Markdown Cheatsheet](https://www.markdownguide.org/cheat-sheet/)  
+- [Nextra Docs](https://nextra.site/docs/docs-theme/page-configuration)  
+- [MDX Components](https://nextra.site/docs/guide/built-ins)
+
+---
+
+## Docs Website Overview
+
+Our docs website is built with **Nextra**, a static site generator for **Next.js**, and is hosted on **Vercel**. The site updates automatically whenever changes are pushed to the GitHub repository.
+
+### GitHub for Version Control
+
+GitHub allows team collaboration without conflict. We use **GitHub Pages** to host the docs, and the "Click to Edit" feature simplifies contributions, making it easy for anyone to update documentation without setting up a local environment.
+
+> Start by exploring our [Docs Website](https://adastra-tw.github.io/docs/).
+
+---
+## Quick Guide: Edit on GitHub
+1. Navigate to the page you want to edit on the [Docs Website](https://adastra-tw.github.io/docs/).
+2. On the right side, click the **Edit this page** button.
+3. You should be redirected to the corresponding page on GitHub.
+4. Click the pencil icon to start editing. You can preview your changes by clicking the **Preview** tab.
+5. Once you're done, click **Commit changes...** at the top right of the page. Then, click **Commit changes** again to confirm.
+6. Your changes will be live on the Docs Website once the build is complete (usually within a few minutes).
+
+<Callout type="info">
+  **Note**: Make sure to follow the [Markdown Cheatsheet](https://www.markdownguide.org/cheat-sheet) for formatting guidelines.
+</Callout>
+
+---
+
+## Markdown & MDX
+
+### Markdown Basics
+
+Markdown is a simple language for formatting text. Here are the essentials:
+
+- **Headers**: `# Header 1`, `## Header 2`, `### Header 3`
+- **Lists**: `- Item 1`, `- Item 2`, `- Item 3`
+- **Links**: `[Text](https://example.com)`
+- **Images**: `![Alt Text](https://example.com/image.jpg)`
+- **Code**: `` `Inline Code` `` or ` ```Block Code``` `
+- **Bold**: `**Bold Text**`  
+- **Italics**: `*Italic Text*`
+
+### MDX Basics
+
+MDX enhances Markdown by allowing JSX components. Here’s an example of using a custom component in MDX:
+
+```jsx
+import CustomComponent from "../components/CustomComponent";
+
+<CustomComponent />;
+```
+
+---
+
+## Best Practices for Documentation
+
+Writing good documentation is essential for clarity and understanding. Keep these tips in mind:
+
+- Use **headings** to structure your content clearly.  
+- Break up long text with **lists** or **bullet points**.  
+- Use **images** or **diagrams** to clarify concepts.  
+- Display code using **code blocks**.  
+- Add **links** for external resources.
+
+> Time to practice! Try creating some Markdown and MDX content based on what we’ve covered.
+
+---
+
+## Local Development: A Simple Example
+
+Let’s walk through setting up a basic **Nextra** documentation site from scratch.
+
+<Steps>
+### Step 1: Clone the Docs Repository
+
+First, create a new Next.js project and install Nextra:
+
+```bash
+git clone https://github.com/adastra-tw/docs.git
+cd docs
+pnpm install
+```
+
+### Step 2: Open the Project in VS Code and Start the Dev Server
+
+Open the project in **Visual Studio Code** and start the development server:
+
+```bash
+code .
+pnpm dev
+```
+
+### Step 3: Create Your First Markdown Page
+
+Now, create a new markdown file under `pages`:
+
+Inside `new-page.mdx`, add the following content:
+
+```md
+# Welcome to My Docs Site
+
+This is an example of a simple documentation page using **Nextra**. You can add more content and customize this page using MDX components.
+
+import Callout from '../components/Callout';
+
+<Callout type="info">
+  **Note**: This is a custom component.
+</Callout>
+```
+
+Save the file and open `_meta.json` to add the new page:
+
+```json
+{
+    // ...other pages,
+    "new-page": "New Page"
+}
+```
+
+### Step 4: View Your New Page
+
+Navigate to `http://localhost:3000/new-page` to see your new page in action.
+
+</Steps>
+
+> For more details on customizing Nextra, check the official [Nextra Docs](https://nextra.site/docs/docs-theme/page-configuration).
+---
+
+## Conclusion
+
+We’ve learned how to manage team documentation using **GitHub**, **Markdown**, **MDX**, and now explored the basics of **Nextra**. With these tools, you can create a dynamic, easy-to-maintain docs site for your projects.
+
+If you have any questions, feel free to ask me or the team. Thanks for joining, and happy documenting!
