@@ -1,5 +1,5 @@
 {
-  "name": "cs-book",
+  "name": "docs",
   "version": "0.0.1",
   "description": "A book about learning computer science",
   "scripts": {
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/YouMingYeh/cs-book.git"
+    "url": "git+https://github.com/YouMingYeh/docs.git"
   },
   "author": "YOU-MING, YEH <b10705052@ntu.edu.tw>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/YouMingYeh/cs-book/issues"
+    "url": "https://github.com/YouMingYeh/docs/issues"
   },
-  "homepage": "https://github.com/YouMingYeh/cs-book",
+  "homepage": "https://github.com/YouMingYeh/docs",
   "dependencies": {
     "next": "^14.0.0",
     "nextra": "latest",
